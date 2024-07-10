@@ -17,16 +17,84 @@
 
 
 
+    <style>
+        section+section {
+            background-color: rgb(41, 134, 214);
+        }
+        section+p {
+            background-color: rgb(221, 134, 20);
+        }
+        p+section {
+            background-color:rgb(21, 224, 157);
+        }
+        section~section {
+            background-color: blueviolet;
+        }
+        section:first-child {
+            background-color: rgb(255, 0, 0);
+        }
+        section:last-child{
+            background-color: brown;
+        }
+        section:nth-last-child(2) {       /*is galo paskutinis vaikas*/
+            background-color: yellow;
+        }
+        section:nth-child(3),
+        section:nth-child(6)  {                /*pazymi 3 ir 6 vaikus*/
+            background-color: aqua;
+        }
 
+        section:nth-child(4n+10)  {     /*randa kas ketvirta O + leidzia pasirinkti nuo kurio galima ir su - tiesineje lygtyje pasirinks nuo minusinio elemento ir tes kas ketvirta*/
+            background-color: rgb(107, 110, 110);
+        }
+        
+        section:nth-of-type(8) {                /*iesko berniuko/mergaites*/
+            background-color: cornflowerblue;
+        }
+    </style>
 
 
 </head>
 <body>
-    Content
+    <header>
+        HEADER
+    </header>
 
 
 
+    <main>
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
 
+
+
+        
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
+
+    </main>
+
+
+
+    <footer>
+        FOOTER
+    </footer>
     
 </body>
 </html>
