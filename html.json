@@ -1,0 +1,16 @@
+{
+    "Mega header": {
+        "prefix": "mega-header",
+        "body": [
+            "<header>",
+            "\t<img src=\"#\" alt=\"Logo\">",
+            "\t<nav>",
+            "\t\t<a href=\"#\">Link</a>",
+            "\t\t<a href=\"#\">Link</a>",
+            "\t\t<a href=\"#\">Link</a>",
+            "\t\t<a href=\"#\">Link</a>",
+            "\t</nav>",
+            "</header>"
+        ]
+    }
+}

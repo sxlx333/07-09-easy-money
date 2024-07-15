@@ -5,52 +5,85 @@ body {
 
 background-color: #b4b4b4;
 color: rgb(48, 48, 48);
+font-family: 'Courier New', Courier, monospace;
 }
-header,
-section:nth-child(1),
-section:nth-child(2)
+.container
  {
     width: 800px;
     margin-left: calc(50% - 400px);
-    background-color: rgb(247, 247, 112);
+    /* background-color: rgb(247, 247, 112); */
     margin-bottom:60px;
 }
 
-
-
-section:nth-child(1) {
-    background-color:green;
+header.container {
+    display: flex;
+    flex-direction:row;
+     justify-content:space-between; 
+    /* height:300px; */
+    /* gap: 150px; */
+    /* padding:20px; */
+    align-items: center;
 }
-section:nth-child(2) {
+
+
+header > a.button {
+    padding: 0.5em 1em;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0.5em;
+    
+}
+.active {
     background-color: red;
 }
 
-main > section + section {
+header > nav.nav-bar {
+    display: flex;
+    gap: 20px;
+}
+header > nav > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    /* background-color: aquamarine;
+    padding: 0.4em 0.8em;
+    border-radius: 1em; */
+}
+/* header > * {
+    background-color: red;
+} */
+
+main.zemiau-nav,
+header.container {
     margin-top: 60px;
 }
 
-img {
+
+
+section.container > img.person {
     width: 55%;
-    
     float:right;
     
 }
-div {width: 35%;
-    background-color: violet;
+div.tekstas {
+    width: 35%;
+    background-color: rgb(255, 154, 255);
     float:left;
 }
 
 
 
-footer{
+footer.footer{
     display:inline-block;
     width: 100%;
     background-color: #fff;
 }
 
-footer > div {
+footer.footer > div {
     float: left;
     width:200px;
     margin-left: calc((100% - 200px * 3) / 4);
-    background-color: violet;
+    background-color: rgb(181, 176, 255);
 }
