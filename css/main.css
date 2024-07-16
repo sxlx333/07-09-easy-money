@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+body {
+
+background-color: #fff;
+color: rgb(48, 48, 48);
+font-family: 'Courier New', Courier, monospace;
+}
+
+
+main.below-nav,
+header.container {
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
+footer.footer{
+    display:inline-block;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer.footer > div {
+    float: left;
+    width:200px;
+    margin-left: calc((100% - 200px * 3) / 4);
+    background-color: rgb(181, 176, 255);
+}

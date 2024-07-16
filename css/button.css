@@ -1,0 +1,44 @@
+
+
+.button {
+    display:inline-block;
+    padding: 0.5em 0.5em;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0.5em;
+    border: 2px solid transparent;
+}
+
+.button.blue {
+    background-color: blue;
+    color: #fff;
+}
+.button.blue:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.button.white {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #acacac;
+}
+.button.white:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: currentColor;
+    cursor: pointer;
+}
+
+.btn-big {
+    padding: 1em 1em;
+    border-radius: 0.7em;
+}
