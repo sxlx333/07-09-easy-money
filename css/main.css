@@ -21,15 +21,33 @@ header.container {
 
 
 
-footer.footer{
-    display:inline-block;
-    width: 100%;
-    background-color: #fff;
+main .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 60px;
+    padding:20px;
+
+    width: 800px;
+    margin-left: calc(50% - 400px);
+    /* background-color: rgb(247, 247, 112); */
+    margin-bottom: 60px;
 }
 
-footer.footer > div {
-    float: left;
-    width:200px;
-    margin-left: calc((100% - 200px * 3) / 4);
-    background-color: rgb(181, 176, 255);
+main .footer > div {
+    display: flex;
+    gap: 20px;
+
+}
+
+main .footer div > a {
+
+    font-size: 20px;
+    text-decoration: none;
+}
+
+main .footer p {
+    font-size: 18px;
+    font-weight: 500;
 }

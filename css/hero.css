@@ -1,7 +1,7 @@
 section.container > img.person {
     width: 55%;
     float:right;
-    
+    padding-bottom: 30px;
 }
 .hero .tekstas {
     width: 44%;

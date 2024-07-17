@@ -1,7 +1,15 @@
 .trio-list {
     
-    display:flex;
+    display: flex;
+    flex-direction: row;
     gap: 30px;
+    padding-top: 63px;
+    /* padding-left: 543px; */
+    /* width: 100%; */
+    /* align-items: center; */
+    /* margin: auto; */
+    object-fit: contain;
+    object-position: center;
 }
 
 .trio-list .trio {
