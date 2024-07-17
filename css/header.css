@@ -19,15 +19,17 @@ header.container {
 
 
 
-.link.active {
-    background-color: red;
+header .link.active {
+    /* background-color: red; */
+    color: black;
+    font-weight: bold;
 }
 
 header > nav.nav-bar {
     display: flex;
     gap: 20px;
 }
-.link {
+header .link {
     font-size: 20px;
     text-decoration: none;
     color: grey;

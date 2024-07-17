@@ -1,0 +1,46 @@
+.trio-list {
+    
+    display:flex;
+    gap: 30px;
+}
+
+.trio-list .trio {
+    width: 247px;
+    padding:20px;
+    background-color: rgb(233, 243, 255);
+    border-radius: 20px;
+}
+.trio-list .trio:nth-child(2) {
+    background-color: #FAEFF6;
+}
+.trio-list .trio:nth-child(3) {
+    background-color: #F2ECFF;
+}
+
+.trio-list .img {
+    display: block;
+    width: 100%;  /*pazymima img teritorija*/
+    height: 50px;
+
+    object-fit: contain;   /*italpinamas img*/
+    object-position: top left;
+}
+
+.trio-list .title {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.trio-list .description {
+    font-size: 17px;
+    color: #779ce5;
+}
+.trio-list .trio:nth-child(2) .description {
+    font-size: 17px;
+    color: #BE6B8C;
+}
+.trio-list .trio:nth-child(3) .description {
+    font-size: 17px;
+    color: #8987F7;
+}

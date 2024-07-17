@@ -3,12 +3,12 @@ section.container > img.person {
     float:right;
     
 }
-div.tekstas {
+.hero .tekstas {
     width: 44%;
     /* background-color: rgb(255, 154, 255); */
     float:left;
 }
-.badge {
+.hero .badge {
     display:flex;
     align-items: center;
     gap: 0.5em;
@@ -16,19 +16,19 @@ div.tekstas {
     text-transform: uppercase;
     font-weight: bold;
 }
-.badge > svg {
+.hero .badge > svg {
     width:20px;
     height:20px;
-    color:green;
+    color:#008000;
 }
-.main-title {
+.hero .main-title {
     font-size:52px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main-title > span {
-    color: blue;
+.hero .main-title > span {
+    color: #1E78F0;
 }
-.description {
+.hero .description {
     color:grey;
 }

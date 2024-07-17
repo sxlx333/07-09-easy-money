@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body {
-
+margin: 0;
 background-color: #fff;
 color: rgb(48, 48, 48);
 font-family: 'Courier New', Courier, monospace;
