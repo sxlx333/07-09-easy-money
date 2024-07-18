@@ -1,13 +1,30 @@
 section.container > img.person {
     width: 55%;
-    float:right;
     padding-bottom: 30px;
 }
 .hero .tekstas {
     width: 44%;
     /* background-color: rgb(255, 154, 255); */
-    float:left;
+    margin-bottom: 22px;
 }
+
+.hero {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(0, 206, 0);
+    position: relative;
+}
+.red {
+    background-color: red;
+    width:400px;
+    padding: 20px;
+    /* transform: translate(-50%, -50%); */
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+}
+
 .hero .badge {
     display:flex;
     align-items: center;
@@ -28,6 +45,15 @@ section.container > img.person {
 
 .hero .main-title > span {
     color: #1E78F0;
+    background-color: pink;
+}
+.hero .main-title > .crazy,
+.hero .main-title:hover > .crazy {
+    display: inline-block;
+    padding: 0 10px;
+    color: #ff0202;
+    border: 5px solid red;
+    transform: rotate(-5deg);
 }
 .hero .description {
     color:grey;
