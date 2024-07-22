@@ -8,6 +8,12 @@ background-color: #fff;
 color: rgb(48, 48, 48);
 font-family: 'Courier New', Courier, monospace;
 overflow-x: hidden;
+background: linear-gradient(
+    65deg,
+     #A36ADD 0%,
+      rgb(255, 255, 255) 20%,
+       #ffffff 80%,
+        #6c8df8 100%);
 }
 
 
@@ -68,12 +74,16 @@ main .footer > div {
 }
 
 main .footer div > a {
-
+    padding: 10px;
     font-size: 20px;
     text-decoration: none;
+    color: #36f;
+}
+main .footer div > a:hover {
+    background-color: #36f;
+    color: #fff;
+}
+main .footer p {
+    margin: 0;
 }
 
-main .footer p {
-    font-size: 18px;
-    font-weight: 500;
-}

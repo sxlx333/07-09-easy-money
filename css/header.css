@@ -33,16 +33,33 @@ header .link {
     font-size: 20px;
     text-decoration: none;
     color: grey;
-    /* background-color: aquamarine;
-    padding: 0.4em 0.8em;
-    border-radius: 1em; */
+    position: relative;
 }
-/* header > * {
-    background-color: red;
-} */
 
 header .link:hover {
     font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: bold;
+    
+}
+
+
+
+header .link.active::after,
+header .link:hover::after {
+    content: '';
+   position: absolute;
+   bottom: -10px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #ccc;
+}
+
+
+
+header .link.active::after{    
+    background-color: #36f;
 }
