@@ -41,7 +41,7 @@ header.container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     align-content: flex-start;
     max-height: 550px;

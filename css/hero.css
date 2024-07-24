@@ -40,10 +40,14 @@ section.container > img.person {
 .hero .main-title > .crazy,
 .hero .main-title:hover > .crazy {
     display: inline-block;
-    padding: 0 10px;
-    color: #ff0202;
+    padding: 4px 10px;
+    background: -webkit-linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(11, 25, 224, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     border: 2px solid red;
-    transform: rotate(-5deg);
+    transform: rotate(-6deg);
 }
 .hero .description {
     color:grey;
