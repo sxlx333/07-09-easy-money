@@ -1,44 +1,57 @@
-
-
 .button {
-    display:inline-block;
-    padding: 0.5em 0.5em;
-    background-color: black;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 0.5em;
-    border: 2px solid transparent;
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  border-radius: 0.5em;
+  border: 2px solid transparent;
 }
 
 .button.blue {
-    background-color: #1E78F0;
-    color: #fff;
+  background-color: #1e78f0;
+  color: #fff;
 }
 .button.blue:hover {
-    background-color: rgb(255, 255, 255);
-    color: #0026ff;
+  background-color: rgb(255, 255, 255);
+  color: #0026ff;
 }
 
 .button.white {
-    background-color: #ffffff;
-    color: #000;
-    border: 2px solid #acacac;
+  background-color: #ffffff;
+  color: #000;
+  border: 2px solid #acacac;
 }
 .button.white:hover {
-    background-color: #000000;
-    color: #ffffff;
-    
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .button:hover {
-    background-color: #fff;
-    color: #000;
-    border-color: currentColor;
-    cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  border-color: currentColor;
+  cursor: pointer;
 }
 
 .btn-big {
-    padding: 1em 1em;
-    border-radius: 0.7em;
+  padding: 1em 1em;
+  border-radius: 0.7em;
+}
+.btn-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+
+@media screen and (max-width: 820px) {
+  .btn-list {
+    display: flex;
+    gap: 1em;
+  }
+  .button {
+    font-size: 16px;
+  }
 }

@@ -1,75 +1,112 @@
-section.container > img.person {
-    width: 55%;
-    padding-bottom: 30px;
+section.container.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
-.hero .tekstas {
-    width: 44%;
-    /* background-color: rgb(255, 154, 255); */
-    margin-bottom: 22px;
+
+section.container > img.person {
+  padding-bottom: 30px;
+  max-width: 51%;
+  height: auto;
+}
+.hero .leftTextContainer {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2rem;
 }
 
 .hero {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-
 
 .hero .badge {
-    display:flex;
-    align-items: center;
-    gap: 0.5em;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .hero .badge > svg {
-    width:20px;
-    height:20px;
-    color:#008000;
+  width: 20px;
+  height: 20px;
+  color: #008000;
 }
 .hero .main-title {
-    font-size:52px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(28px, 5vw, 52px);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero .main-title > span {
-    color: #1E78F0;
+  color: #1e78f0;
 }
 .hero .main-title > .crazy,
 .hero .main-title:hover > .crazy {
-    display: inline-block;
-    padding: 4px 10px;
-    background: -webkit-linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-    linear-gradient(127deg, rgba(11, 25, 224, 0.8), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: 2px solid red;
-    transform: rotate(-6deg);
+  display: inline-block;
+  padding: 4px 10px;
+  background: -webkit-linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(11, 25, 224, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid red;
+  transform: rotate(-6deg);
 }
 .hero .description {
-    color:grey;
+  color: grey;
 }
 
 .crazy::before,
 .crazy::after,
 .crazy .sqr::before,
 .crazy .sqr::after {
-    content: '';
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: #fff;
-    border: 2px solid red;
-    position: absolute;
-    bottom: -7px;
-    right: -7px;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border: 2px solid red;
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
 }
-.crazy::before {top: -7px; left: -7px;}
-.crazy::after {top: -7px; right: -7px;}
-.crazy .sqr::before{bottom: -7px; left: -7px;}
-.crazy .sqr::after{bottom: -7px; right: -7px;}
+.crazy::before {
+  top: -7px;
+  left: -7px;
+}
+.crazy::after {
+  top: -7px;
+  right: -7px;
+}
+.crazy .sqr::before {
+  bottom: -7px;
+  left: -7px;
+}
+.crazy .sqr::after {
+  bottom: -7px;
+  right: -7px;
+}
 
-
+@media screen and (max-width: 820px) {
+  section.container.hero {
+    flex-direction: column;
+    text-align: left;
+  }
+  .hero .leftTextContainer {
+    width: 100%;
+  }
+  section.container > img.person {
+    max-width: 90%;
+  }
+}
